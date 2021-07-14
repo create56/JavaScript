@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     <script>
+   async function login() {
+        
+        let loginDto = {
+        username: "ssar",
+        password: "1234"
+        };
+    
+    
+        let r1 = await fetch("http://192.168.3.101:8000/post", {
+            method:"get"
+        });
+        //바로 응답되는데 null값이다. 일단 null을넣어줄게 근데  나중에 데이터 넣어줄게
+        // panding
+            let r2 = r1.json();
+            console.log(r2);
+    }
+
+    login();
+
+
+    </script>
+</body>
+</html>

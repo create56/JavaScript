@@ -9,9 +9,44 @@ let bool_data = true;
 let string_data = "안녕";
 let char_data = "가";
 let back_data = '백틱 ${int num}';
-let list_data = [1,2,3,4];
+//let list_data = [1,2,3,4];
 let object_data = {
     id: 1,
-    username: "ssar"
+    username: "ssar",
+    ass :()=>{}
 }
-console.log(num); // 타입 추론
+// console.log(num); // 타입 추론
+
+//for(let i=0; i<list_data.length; i++) { // 쓸 일이 없다.
+  //  console.log(list_data[i]);
+//}
+
+//let newPrint = (value)=> { //앞에 타입을 적을 필여가 없다 익명 함수
+//console.log(value);
+//}
+
+//list_data.forEach(newPrint);
+
+ //list_data.forEach() {
+    //console.log(value+100);
+ //} //자바스크립트 화살표 함수 
+
+ // 1. 반복문 
+ // 다른 메서드에 출력
+
+ let newHello = (value,index)=>  value+100;
+
+ let newHello2 = (value,index)=> {
+     value = value*2;
+     return value+100;
+ }
+
+ console.log(value);
+
+let component_list = ["","","","",];
+
+ // 2. 리턴이 있는 반복문 
+let new_data = list_data.map((value,index)=> value+100); // 스트리밍  yeild 문법  
+// 메모리에 4개의 공간이 생긴다.
+
+console.log(new_data);
